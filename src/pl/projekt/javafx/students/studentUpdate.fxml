@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="1098.0" style="-fx-background-color: #663399;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.projekt.javafx.students.StudentUpdateController">
+   <effect>
+      <Glow />
+   </effect>
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="258.0">
+         <effect>
+            <Glow />
+         </effect>
+         <children>
+            <Label alignment="CENTER" layoutX="-3.0" layoutY="157.0" prefHeight="63.0" prefWidth="264.0" style="-fx-background-color: #DB7093; -fx-background-radius: 15;" text="Student" textFill="WHITE">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <Circle fill="#581fff" layoutX="129.0" layoutY="82.0" radius="57.0" stroke="BLACK" strokeType="INSIDE" />
+            <ImageView fitHeight="76.0" fitWidth="76.0" layoutX="90.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../icons/student-xl.png" />
+               </image>
+            </ImageView>
+            <VBox layoutX="1.0" layoutY="243.0" prefHeight="240.0" prefWidth="258.0" />
+            <Button fx:id="studentBackButton" layoutX="34.0" layoutY="490.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="82.0" prefWidth="76.0" style="-fx-background-radius: 180; -fx-background-color: #FF4500;">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/left-round-xl.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="exitButton" layoutX="92.0" layoutY="580.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="82.0" prefWidth="76.0" style="-fx-background-radius: 90; -fx-background-color: #FF4500;">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/exit-xl.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="studentForwardButton" layoutX="152.0" layoutY="490.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="82.0" prefWidth="76.0" style="-fx-background-radius: 90; -fx-background-color: #FF4500;">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/right-round-xl.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="258.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="839.0" style="-fx-background-color: #9370DB;">
+         <effect>
+            <Glow />
+         </effect>
+         <children>
+            <AnchorPane layoutX="433.0" layoutY="-5.0" prefHeight="70.0" prefWidth="409.0" style="-fx-background-color: #C71585;" />
+            <Pane layoutY="-5.0" prefHeight="70.0" prefWidth="433.0" style="-fx-background-color: #C71585;" />
+            <Button fx:id="updateStudent" layoutX="661.0" layoutY="607.0" mnemonicParsing="false" onAction="#updateStud" prefHeight="60.0" prefWidth="168.0" style="-fx-background-color: #C71585;" text="Update" textFill="#fffefe" />
+            <TextField fx:id="firstName" layoutX="14.0" layoutY="188.0" prefHeight="36.0" prefWidth="604.0" promptText="First Name of Student" />
+            <TextField fx:id="lastName" layoutX="14.0" layoutY="252.0" prefHeight="36.0" prefWidth="604.0" promptText="Last Name of Student" />
+            <TextField fx:id="groupId" layoutX="14.0" layoutY="325.0" prefHeight="36.0" prefWidth="604.0" promptText="Group Id of Student" />
+            <TextField fx:id="educationYear" layoutX="14.0" layoutY="389.0" prefHeight="36.0" prefWidth="604.0" promptText="Education Year" />
+            <TextField fx:id="age" layoutX="14.0" layoutY="458.0" prefHeight="36.0" prefWidth="604.0" promptText="Age of Student" />
+            <TextField fx:id="Id" layoutX="14.0" layoutY="125.0" prefHeight="36.0" prefWidth="604.0" promptText="Id of Student" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
